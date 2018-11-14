@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/aurora/aurora",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "小巧玲珑书吧",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#2e5e86",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/ic_home_normal.png",
+      "selectedIconPath": "images/ic_home_pressed.png"
+    },
+    {
+      "pagePath": "pages/aurora/aurora",
+      "text": "加入",
+      "iconPath": "images/ic_join_normal.png",
+      "selectedIconPath": "images/ic_join_pressed.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true
+}
