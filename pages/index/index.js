@@ -12,17 +12,17 @@ Page({
     autoplay: false,
     interval: 5000,
     duration: 1000,
-    proList: null
-        // [{
-        //     'logo': '/images/pro_01.jpg',
-        //     'title': '小巧玲珑',
-        //     'desc': '小巧玲珑小巧玲珑'
-        //   }, 
-        //   {
-        //     'logo': '/images/pro_01.jpg',
-        //     'title': '小巧玲珑',
-        //     'desc': '小巧玲珑book store\n完美无瑕'
-        //   }],
+    proList: 
+        [{
+            'logo': '/images/pro_01.jpg',
+            'title': '小巧玲珑',
+            'desc': '小巧玲珑小巧玲珑'
+          }, 
+          {
+            'logo': '/images/pro_01.jpg',
+            'title': '小巧玲珑',
+            'desc': '小巧玲珑book store\n完美无瑕'
+          }],
   },
   //事件处理函数
   bindViewTap: function() {
@@ -44,11 +44,8 @@ Page({
     var title = proList[index].title;
     wx.setStorageSync('title', title);
     wx.navigateTo({
-      url: '/pages/detail/detail',
+      url: '/pages/detail/detail?title='+title,
     })
-    // wx.navigateTo({
-    //   url: '/pages/detail/detail?title='+title,
-    // })
   },
   getProList: function(){
     var self = this;

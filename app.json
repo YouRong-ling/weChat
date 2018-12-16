@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/aurora/aurora",
+    "pages/phone/phone",
     "pages/detail/detail",
     "pages/logs/logs"
   ],
@@ -21,7 +22,13 @@
     },
     {
       "pagePath": "pages/aurora/aurora",
-      "text": "加入",
+      "text": "地图",
+      "iconPath": "images/ic_join_normal.png",
+      "selectedIconPath": "images/ic_join_pressed.png"
+    },
+    {
+      "pagePath": "pages/phone/phone",
+      "text": "电话",
       "iconPath": "images/ic_join_normal.png",
       "selectedIconPath": "images/ic_join_pressed.png"
     }]

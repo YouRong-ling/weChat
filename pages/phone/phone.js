@@ -1,22 +1,20 @@
-// pages/detail/detail.js
+// pages/phone/phone.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      staffA: { firstName: 'Hulk', lastName: 'Hu' },
-      staffB: { firstName: 'Shang', lastName: 'You' },
-      staffC: { firstName: 'Gideon', lastName: 'Lin' }
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
-    var title = wx.getStorageSync('title');
-    console.log(title)
+    wx.makePhoneCall({
+      phoneNumber: '13718235657' //仅为示例，并非真实的电话号码
+    })
   },
 
   /**
@@ -66,10 +64,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  tell:function(){
-    wx.makePhoneCall({
-      phoneNumber: '19898888'
-    })
   }
 })
